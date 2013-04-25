@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/pref_header_general">
+		<SwitchPreference
+			android:defaultValue="@bool/boolean_true"
+			android:enabled="@bool/boolean_false"
+			android:key="pref_crash_reports"
+			android:summaryOff="@string/pref_crash_reports_summary_off"
+			android:summaryOn="@string/pref_crash_reports_summary_on"
+			android:switchTextOff="@string/pref_off"
+			android:switchTextOn="@string/pref_on"
+			android:title="@string/pref_crash_reports"/>
+		<SwitchPreference
+			android:defaultValue="@bool/boolean_true"
+			android:enabled="@bool/boolean_false"
+			android:key="pref_google_analytics"
+			android:summaryOff="@string/pref_google_analytics_summary_off"
+			android:summaryOn="@string/pref_google_analytics_summary_on"
+			android:switchTextOff="@string/pref_off"
+			android:switchTextOn="@string/pref_on"
+			android:title="@string/pref_statistics"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_header_about">
+		<Preference
+			android:enabled="@bool/boolean_true"
+			android:key="pref_feedback"
+			android:selectable="@bool/boolean_true"
+			android:summary="@string/text_feedback_summary"
+			android:title="@string/pref_feedback"/>
+		<Preference
+			android:enabled="@bool/boolean_true"
+			android:key="pref_changelog"
+			android:selectable="true"
+			android:summary="@string/pref_changelog_summary"
+			android:title="@string/pref_changelog">
+		</Preference>
+		<Preference
+			android:enabled="@bool/boolean_true"
+			android:key="pref_about"
+			android:selectable="@bool/boolean_true"
+			android:summary="@string/pref_about_summary"
+			android:title="@string/pref_about"/>
+	</PreferenceCategory>
 
 </PreferenceScreen>
