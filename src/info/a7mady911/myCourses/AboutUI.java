@@ -1,57 +1,43 @@
 package info.a7mady911.myCourses;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-import com.google.analytics.tracking.android.EasyTracker;
 
 /**
  * User: A7madY911
- * Date: 4/14/13
+ * Class: About UI
+ * Description: Show information about developer, application version and logo
  */
 public class AboutUI extends Activity {
     private static final String TAG = AboutUI.class.getSimpleName();
-    private Context mCtx = this;
-    private TextView appVersion;
+    private TextView appVersionTextView;
     private String appVersionNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Google Analytics starts tracking this activity
-        try {
-            EasyTracker.getInstance().setContext(mCtx);
-            EasyTracker.getInstance().activityStart(this);
-        } catch (Exception e) {
-            Log.d(TAG, "Google Analytics starts: " + e.getMessage());
-        }
-
         // Show About UI layout
-        setContentView(R.layout.home_ui);
+        setContentView(R.layout.about_ui);
 
-        // Get App Version
+        // Get and display app version
         try {
             appVersionNumber = this.getPackageManager().getPackageInfo(
                     this.getPackageName(), 0).versionName;
-            //appVersion = (TextView) findViewById(R.id.About_AppVersion);
-            appVersion.setText("Version: " + appVersionNumber);
+            appVersionTextView = (TextView) findViewById(R.id.about_versionTextView);
+            appVersionTextView.setText("Version " + appVersionNumber);
         } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+            //show error log if cant find package name
+            Log.e(TAG, e.toString());
         }
     }
 
+    //OnStop AboutUI activity
     @Override
     protected void onStop() {
         super.onStop();
-        // Google Analytics stops tracking this activity
-        try {
-            EasyTracker.getInstance().activityStop(this);
-        } catch (Exception e) {
-            Log.d(TAG, "Google Analytics stops: " + e.getMessage());
-        }
     }
 }

@@ -8,14 +8,14 @@
 		android:minSdkVersion="14"
 		android:targetSdkVersion="17"/>
 
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
 
 	<application
 		android:label="@string/app_name"
 		android:icon="@drawable/ic_launcher"
 		android:name=".MyCoursesApp"
-		android:theme="@android:style/Theme.DeviceDefault"
+		android:theme="@android:style/Theme.DeviceDefault.Light"
 		android:allowBackup="true">
 		<activity
 			android:name="MainUI"
@@ -29,6 +29,9 @@
 		</activity>
 		<activity android:name=".VerifyUI"/>
 		<activity android:name=".HomeUI"/>
-		<activity android:name=".AboutUI"/>
+		<activity
+			android:name=".AboutUI"
+			android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+		</activity>
 	</application>
 </manifest>
