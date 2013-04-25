@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">myCourses</string>
+	<string name="text_appversion">Version 1.0</string>
+	<string name="main_id_text_field_hint">Enter Your ID</string>
+	<string name="main_submit_button_text">Verify</string>
+	<string name="verify_submit_button_text">Next</string>
+	<string name="verify_code_text_field_hint">Enter verification code</string>
+	<string name="text_exit">Exit</string>
+	<string name="text_settings">Settings</string>
+
+
+</resources>

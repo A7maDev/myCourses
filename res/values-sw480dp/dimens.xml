@@ -1,0 +1,14 @@
+<resources>
+	<!-- Phablets (calculate: default x 1.5) -->
+	<!-- Main UI -->
+	<dimen name="main_title_text_top_padding">105dp</dimen>
+	<dimen name="main_title_text_size">54sp</dimen>
+	<dimen name="main_app_version_left_padding">150dp</dimen>
+	<dimen name="main_app_version_text_size">30sp</dimen>
+	<dimen name="main_layout_all_padding">7.5dp</dimen>
+	<dimen name="main_submit_button_field_top_padding">90dp</dimen>
+	<dimen name="main_id_text_filed_top_margin">60dp</dimen>
+	<dimen name="main_submit_button_top_margin">60dp</dimen>
+	<dimen name="main_id_text_filed_text_size">27sp</dimen>
+	<dimen name="main_submit_button_text_size">27sp</dimen>
+</resources>
