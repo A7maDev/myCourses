@@ -27,21 +27,6 @@ public class SettingsUI extends PreferenceActivity {
                 .replace(android.R.id.content, prefFragment).commit();
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
     public static class PrefFragment extends PreferenceFragment implements
             OnPreferenceClickListener, OnPreferenceChangeListener {
 

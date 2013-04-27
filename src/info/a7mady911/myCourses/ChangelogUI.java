@@ -38,7 +38,6 @@ public class ChangelogUI {
     static final private String TAG = ChangelogUI.class.getSimpleName();
     static final private String TITLE_CHANGELOG = "text_changelog";
     static final private String CHANGELOG_XML = "changelog";
-
     private Activity fActivity;
 
     public ChangelogUI(Activity context) {
