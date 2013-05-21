@@ -7,15 +7,24 @@ import android.util.Log;
 import android.widget.TextView;
 
 /**
- * User: A7madY911
+ * Author: A7madY911
  * Class: About UI
  * Description: Show information about developer, application version and logo
  */
 public class AboutUI extends Activity {
+
     private static final String TAG = AboutUI.class.getSimpleName();
     private TextView appVersionTextView;
     private String appVersionNumber;
 
+    /**
+     * Name: onCreate
+     * Description: during the activity creation
+     *
+     * @param savedInstanceState
+     * @throws PackageManager.NameNotFoundException
+     *
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +44,10 @@ public class AboutUI extends Activity {
         }
     }
 
-    //OnStop AboutUI activity
+    /**
+     * Name: onStop
+     * Description: when the activity stops
+     */
     @Override
     protected void onStop() {
         super.onStop();

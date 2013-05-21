@@ -1,19 +1,36 @@
 <resources>
-	<!-- handsets (default) -->
-	<!-- Main UI -->
-	<dimen name="main_title_text_top_padding">70dp</dimen>
-	<dimen name="main_title_text_size">36sp</dimen>
-	<dimen name="main_app_version_left_padding">100dp</dimen>
-	<dimen name="main_app_version_text_size">20sp</dimen>
-	<dimen name="main_layout_all_padding">5dp</dimen>
-	<dimen name="main_submit_button_field_top_padding">60dp</dimen>
-	<dimen name="main_id_text_filed_top_margin">40dp</dimen>
-	<dimen name="main_submit_button_top_margin">40dp</dimen>
-	<dimen name="main_id_text_filed_text_size">18sp</dimen>
-	<dimen name="main_submit_button_text_size">18sp</dimen>
-	<!-- About UI -->
-	<dimen name="about_version_text_size">14sp</dimen>
-	<dimen name="about_version_text_top_margin">20dp</dimen>
-	<dimen name="about_developedby_text_size">16sp</dimen>
-	<dimen name="about_developedby_text_top_margin">60dp</dimen>
+    <!-- handsets (default) -->
+    <!-- Main UI -->
+    <dimen name="main_title_text_top_padding">70dp</dimen>
+    <dimen name="main_title_text_size">36sp</dimen>
+    <dimen name="main_app_version_left_padding">100dp</dimen>
+    <dimen name="main_app_version_text_size">20sp</dimen>
+    <dimen name="main_layout_all_padding">5dp</dimen>
+    <dimen name="main_submit_button_field_top_padding">60dp</dimen>
+    <dimen name="main_id_text_filed_top_margin">40dp</dimen>
+    <dimen name="main_submit_button_top_margin">40dp</dimen>
+    <dimen name="main_id_text_filed_text_size">18sp</dimen>
+    <dimen name="main_submit_button_text_size">18sp</dimen>
+    <!-- About UI -->
+    <dimen name="about_version_text_size">14sp</dimen>
+    <dimen name="about_version_text_top_margin">20dp</dimen>
+    <dimen name="about_developedby_text_size">16sp</dimen>
+    <dimen name="about_developedby_text_top_margin">60dp</dimen>
+    <!-- UsefulLinks UI -->
+    <dimen name="usefullink_link_text_left_margin">20dp</dimen>
+    <!-- Students UI -->
+    <dimen name="student_title_top_margine">16dp</dimen>
+    <dimen name="student_title_bottom_margine">5dp</dimen>
+    <!-- Course Details UI -->
+    <dimen name="course_title_top_margine">16dp</dimen>
+    <dimen name="course_title_bottom_margine">5dp</dimen>
+    <!-- Staff UI -->
+    <dimen name="staff_title_top_margine">16dp</dimen>
+    <dimen name="staff_title_bottom_margine">5dp</dimen>
+    <!-- Enrollment UI -->
+    <dimen name="enroll_title_top_margine">16dp</dimen>
+    <dimen name="enroll_title_bottom_margine">5dp</dimen>
+    <!-- Assessments UI -->
+    <dimen name="assessments_title_top_margine">16dp</dimen>
+    <dimen name="assessments_title_bottom_margine">5dp</dimen>
 </resources>

@@ -4,36 +4,47 @@
           android:versionCode="1"
           android:versionName="0.1">
 
-	<uses-sdk
-		android:minSdkVersion="14"
-		android:targetSdkVersion="17"/>
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="17"/>
 
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
 
-	<application
-		android:label="@string/app_name"
-		android:icon="@drawable/ic_launcher"
-		android:name=".MyCoursesApp"
-		android:theme="@android:style/Theme.DeviceDefault.Light"
-		android:allowBackup="true">
-		<activity
-			android:name="MainUI"
-			android:label="@string/app_name"
-			android:screenOrientation="portrait"
-			android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
-		</activity>
-		<activity android:name=".VerifyUI"/>
-		<activity android:name=".HomeUI"/>
-		<activity
-			android:name=".AboutUI"
-			android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
-		</activity>
-		<activity android:name=".SettingsUI">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN"/>
-				<category android:name="android.intent.category.LAUNCHER"/>
-			</intent-filter>
-		</activity>
-	</application>
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:name=".MyCoursesApp"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:allowBackup="true">
+        <activity
+                android:name="MainUI"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.DeviceDefault.NoActionBar">
+        </activity>
+        <activity android:name=".VerifyUI"/>
+        <activity android:name=".HomeUI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".AboutUI"
+                android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        </activity>
+        <activity android:name=".SettingsUI"/>
+        <activity android:name=".StaffUI"/>
+        <activity android:name=".CourseDetailsUI"/>
+        <activity android:name=".EnrollmentUI"/>
+        <activity android:name=".UsefulLinksUI"/>
+        <activity android:name=".AssessmentDetailsUI"/>
+        <activity android:name=".AssessmentsUI"/>
+        <activity android:name=".TimetableUI2"/>
+        <activity android:name=".TimetableUI"/>
+        <activity android:name=".ProgrammeUI"/>
+    </application>
 </manifest>

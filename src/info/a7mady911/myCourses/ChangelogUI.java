@@ -34,17 +34,32 @@ import java.io.IOException;
  *
  */
 
+/**
+ * Author: Martin van Zuilekom
+ * Class: Changelog UI
+ * Description: Show information about the changes and app version number
+ */
 public class ChangelogUI {
-    static final private String TAG = ChangelogUI.class.getSimpleName();
-    static final private String TITLE_CHANGELOG = "text_changelog";
-    static final private String CHANGELOG_XML = "changelog";
+
+    private static final String TAG = ChangelogUI.class.getSimpleName();
+    private static final String TITLE_CHANGELOG = "text_changelog";
+    private static final String CHANGELOG_XML = "changelog";
     private Activity fActivity;
 
+    /**
+     * Name: ChangelogUI
+     *
+     * @param context
+     */
     public ChangelogUI(Activity context) {
         fActivity = context;
     }
 
-    // Get the current app version
+    /**
+     * Name: GetAppVersion
+     *
+     * @return String
+     */
     private String GetAppVersion() {
         try {
             PackageInfo _info = fActivity.getPackageManager().getPackageInfo(

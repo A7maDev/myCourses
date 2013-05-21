@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <!-- Student ID -->
+        <TextView
+                android:id="@+id/studentui_title1TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/studentui_title_studentid"/>
+
+        <TextView
+                android:id="@+id/studentui_idTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentui_title1TextView"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <View style="@style/Divider"/>
+
+        <!-- Student Name -->
+        <TextView
+                android:id="@+id/studentui_title2TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/studentui_title_studentname"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <TextView
+                android:id="@+id/studentui_nameTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentui_title2TextView"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <View style="@style/Divider"/>
+
+        <!-- Student Email -->
+        <TextView
+                android:id="@+id/studentui_title3TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/studentui_title_studentemail"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <TextView
+                android:id="@+id/studentui_emailTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentui_title3TextView"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <View style="@style/Divider"/>
+
+        <!-- Student Mentor -->
+        <TextView
+                android:id="@+id/studentui_title4TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/studentui_title_studentmentor"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <TextView
+                android:id="@+id/studentui_mentorTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentui_title4TextView"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <View style="@style/Divider"/>
+
+        <!-- Student Programme -->
+        <TextView
+                android:id="@+id/studentui_title5TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/studentui_title_studentprog"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <TextView
+                android:id="@+id/studentui_progTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/studentui_title5TextView"
+                android:textColor="#343434"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <View style="@style/Divider"/>
+
+    </LinearLayout>
+</ScrollView>
