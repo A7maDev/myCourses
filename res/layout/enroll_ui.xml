@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <!-- Polytechnic Enrollment (Header) -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enrollui_header_uni"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners" android:focusableInTouchMode="false"/>
+
+        <!-- Enrollment Year -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/student_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/enrollui_title_year"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enrollui_uniYearEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Enrollment Date -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enrollui_title_date"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:layout_marginBottom="@dimen/enroll_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enrollui_uniDateEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Enrollment Requirements -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enrollui_title_requirements"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:layout_marginBottom="@dimen/enroll_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enrollui_uniRequireEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="false"/>
+
+        <!-- Course Enrollment (Header) -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enrollui_header_courses"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners"/>
+
+        <!-- Course Enrollment Year -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:layout_marginBottom="@dimen/enroll_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/enrollui_title_year"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enrollui_courseYearEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Course Enrollment Date -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enrollui_title_date"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:layout_marginBottom="@dimen/enroll_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/enrollui_courseDateEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/main_layout_all_padding" android:gravity="center">
+
+        <TextView
+                android:id="@+id/acadcalendarui_viewreader"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/acadcalendarui_textview_height"
+                android:text="@string/acadcalendarui_viewreader"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textStyle="normal"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/acadcalendarui_textview_margin_bottom"
+                android:layout_marginTop="@dimen/acadcalendarui_textview_margin_top"/>
+        <TextView
+                android:id="@+id/acadcalendarui_viewbrowser"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/acadcalendarui_textview_height"
+                android:text="@string/acadcalendarui_viewbrowser"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/acadcalendarui_textview_margin_bottom"/>
+        <TextView
+                android:id="@+id/acadcalendarui_sharepdf"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/acadcalendarui_textview_height"
+                android:text="@string/acadcalendarui_sharepdf"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/acadcalendarui_textview_margin_bottom"/>
+        <TextView
+                android:id="@+id/acadcalendarui_sharelink"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/acadcalendarui_textview_height"
+                android:text="@string/acadcalendarui_sharelink"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/acadcalendarui_textview_margin_bottom"/>
+    </LinearLayout>
+</ScrollView>

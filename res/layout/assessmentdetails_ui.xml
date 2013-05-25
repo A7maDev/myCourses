@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <!-- Assessment Name -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assessmentsui_title_name"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/assessments_title_top_margine"
+                android:layout_marginBottom="@dimen/assessments_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/assessmentsui_nameEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false" android:singleLine="true"/>
+
+        <!-- Assessment Weight -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/assessments_title_top_margine"
+                android:layout_marginBottom="@dimen/assessments_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/assessmentsui_title_weight"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/assessmentsui_weightEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false" android:singleLine="true"/>
+
+        <!-- Assessment Due -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assessmentsui_title_due"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/assessments_title_top_margine"
+                android:layout_marginBottom="@dimen/assessments_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/assessmentsui_dueEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false" android:singleLine="true"/>
+
+        <!-- Assessment Grade -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/assessmentsui_title_grade"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/assessments_title_top_margine"
+                android:layout_marginBottom="@dimen/assessments_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center" android:orientation="horizontal">
+            <EditText
+                    android:layout_width="@dimen/ui_editview_withaction_width"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/assessmentsui_gradeEditText"
+                    android:layout_gravity="left|center_vertical"
+                    android:typeface="sans"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:editable="false" android:singleLine="true"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/assessmentsui_gradeAction" android:src="@drawable/ic_action_edit_black"
+                    android:visibility="visible" android:adjustViewBounds="true" android:baselineAlignBottom="false"
+                    android:clickable="true" android:scaleType="center" android:cropToPadding="false"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/assessmentsui_gradeActionContentDescr"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

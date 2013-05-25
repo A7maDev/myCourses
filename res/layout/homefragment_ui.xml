@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="@dimen/main_layout_all_padding">
+
+        <TextView
+                android:id="@+id/homefragmentui_student"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homefragmentui_textview_height"
+                android:text="@string/homefragmentui_student"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textStyle="normal"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"
+                android:layout_marginTop="@dimen/homefragmentui_textview_margin_top"/>
+        <TextView
+                android:id="@+id/homefragmentui_timetable"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homefragmentui_textview_height"
+                android:text="@string/homefragmentui_timetable"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"/>
+        <TextView
+                android:id="@+id/homefragmentui_courses"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homefragmentui_textview_height"
+                android:text="@string/homefragmentui_courses"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"/>
+        <TextView
+                android:id="@+id/homefragmentui_acadcalendar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homefragmentui_textview_height"
+                android:text="@string/homefragmentui_acadcalendar"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light"
+                android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"/>
+        <TextView android:id="@+id/homefragmentui_usefullinks"
+                  android:layout_width="fill_parent"
+                  android:layout_height="@dimen/homefragmentui_textview_height"
+                  android:text="@string/homefragmentui_usefullinks"
+                  android:gravity="center"
+                  android:background="@drawable/rounded_corners_light" android:clickable="true"
+                  android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                  android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"/>
+        <TextView
+                android:id="@+id/homefragmentui_enrollmentinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homefragmentui_textview_height"
+                android:text="@string/homefragmentui_enrollmentinfo"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_light" android:clickable="true"
+                android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+                android:layout_marginBottom="@dimen/homefragmentui_textview_margin_bottom"/>
+    </LinearLayout>
+</ScrollView>

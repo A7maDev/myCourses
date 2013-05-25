@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="info.a7madev.myCourses"
+          android:versionCode="2"
+          android:versionName="0.2">
+
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="17"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_main_launcher"
+            android:name=".MyCoursesApp"
+            android:theme="@style/Theme.Lightblue"
+            android:allowBackup="true"
+            android:debuggable="false" tools:ignore="HardcodedDebugMode">
+        <activity
+                android:name=".MainUI"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Holo.NoActionBar">
+        </activity>
+        <activity android:name=".VerifyUI"/>
+        <activity android:name=".HomeUI"
+                  android:theme="@style/Theme.Lightblue">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".AboutUI"
+                android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        </activity>
+        <activity android:name=".SettingsUI"/>
+        <activity android:name=".TimetableUI2"/>
+        <activity android:name=".TimetableUI"/>
+    </application>
+</manifest>

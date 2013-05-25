@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/main_layout_all_padding"
+            android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+        <!-- Course Code -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_code"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/coursedetailsui_codeEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false" android:singleLine="true"/>
+
+        <!-- Course Name -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/student_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:text="@string/coursedetailsui_title_name"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/coursedetailsui_nameEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Course Credit -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_credit"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/coursedetailsui_creditEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Course Level -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_level"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/coursedetailsui_levelEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Course Programme -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_programme"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center" android:orientation="horizontal">
+            <EditText
+                    android:layout_width="@dimen/ui_editview_withaction_width"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/coursedetailsui_progEditText"
+                    android:layout_gravity="left|center_vertical"
+                    android:typeface="sans"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:singleLine="true"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/coursedetailsui_progAction" android:src="@drawable/ic_action_more_black"
+                    android:visibility="visible" android:adjustViewBounds="true" android:baselineAlignBottom="false"
+                    android:clickable="true" android:scaleType="center" android:cropToPadding="false"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/coursedetailsui_progActionContentDescr"/>
+        </LinearLayout>
+
+        <!-- CLASS -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_header_class"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/enroll_title_top_margine"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners"
+                android:focusableInTouchMode="false"/>
+
+        <!-- Class CRN -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_crn"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/coursedetailsui_crnEditText"
+                android:layout_gravity="left|center_vertical"
+                android:typeface="sans"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:clickable="false"
+                android:editable="false"
+                android:singleLine="true"/>
+
+        <!-- Class Tutor -->
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coursedetailsui_title_tutor"
+                android:textColor="#000000"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/course_title_top_margine"
+                android:layout_marginBottom="@dimen/course_title_bottom_margine"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center" android:orientation="horizontal">
+            <EditText
+                    android:layout_width="@dimen/ui_editview_withaction_width"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/coursedetailsui_tutorEditText"
+                    android:layout_gravity="left|center_vertical"
+                    android:typeface="sans"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:singleLine="true"/>
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/coursedetailsui_tutorAction" android:src="@drawable/ic_action_info_black"
+                    android:visibility="visible" android:adjustViewBounds="true" android:baselineAlignBottom="false"
+                    android:clickable="true" android:scaleType="center" android:cropToPadding="false"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/coursedetailsui_tutorActionContentDescr"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
